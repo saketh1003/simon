@@ -4,7 +4,7 @@ var userpat=[];
 var level=0;
 var start=false;
 var maxlevel=0;
-$(document).keypress(function(){
+$(".btn").click(function(){
     if(start===false)
     {
         $("#level-title").text("Level "+level);
@@ -12,7 +12,7 @@ $(document).keypress(function(){
         start=true;
     }
 });
-$("#highscore").click(function(){
+$(document).keypress(function(){
     if(start===false)
     {
         $("#level-title").text("Level "+level);
@@ -46,7 +46,7 @@ function check(idx)
         setTimeout(function(){
             $("body").removeClass("game-over");
         },200);
-        $("#level-title").text("Game Over !, Press HighScore or any key to Restart");
+        $("#level-title").text("Game Over, Press any button to Restart");
         maxlevel=Math.max(level,maxlevel);
         $("#highscorehead").text(maxlevel);
         level=0;
