@@ -12,7 +12,7 @@ $(document).keypress(function(){
         start=true;
     }
 });
-$(document).click(function(){
+$("#highscore").click(function(){
     if(start===false)
     {
         $("#level-title").text("Level "+level);
