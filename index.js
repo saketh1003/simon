@@ -46,7 +46,7 @@ function check(idx)
         setTimeout(function(){
             $("body").removeClass("game-over");
         },200);
-        $("#level-title").text("Game Over, Press any key to Restart");
+        $("#level-title").text("Game Over !, Press HighScore or any key to Restart");
         maxlevel=Math.max(level,maxlevel);
         $("#highscorehead").text(maxlevel);
         level=0;
